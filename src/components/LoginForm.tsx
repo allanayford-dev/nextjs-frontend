@@ -18,13 +18,6 @@ const LoginForm = () => {
       <div className="w-full max-w-sm rounded-md bg-white p-6 shadow-md">
         <h1 className="text-center text-2xl font-semibold">Login</h1>
         {error && <p className="text-sm text-red-500">{error}</p>}
-        {
-          <p>
-            NEXT_PUBLIC_API_BASE_URL: {process.env.NEXT_PUBLIC_API_BASE_URL}
-          </p>
-        }
-        {<p>REACT_APP_API_BASE_URL: {process.env.REACT_APP_API_BASE_URL}</p>}
-        {<p>API_BASE_URL: {process.env.API_BASE_URL}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium">Email:</label>
