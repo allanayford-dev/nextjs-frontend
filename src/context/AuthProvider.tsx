@@ -53,6 +53,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       setLoading(true);
       setError(null);
 
+      console.log(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/auth/login`);
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/auth/login`,
         {
