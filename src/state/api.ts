@@ -113,7 +113,7 @@ export const api = createApi({
   tagTypes: ["Projects", "Tasks", "Users", "Teams"],
   endpoints: (build) => ({
     getAuthUser: build.query({
-      query: () => "/auth/me",
+      query: () => "api/auth/me",
       keepUnusedDataFor: 0, // ✅ Forces re-fetching
     }),
     getProjects: build.query<Project[], void>({
