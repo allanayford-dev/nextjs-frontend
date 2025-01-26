@@ -20,8 +20,11 @@ const LoginForm = () => {
         {error && <p className="text-sm text-red-500">{error}</p>}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium">Email:</label>
+            <label htmlFor="email" className="block text-sm font-medium">
+              Email:
+            </label>
             <input
+              id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -30,8 +33,11 @@ const LoginForm = () => {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium">Password:</label>
+            <label htmlFor="password" className="block text-sm font-medium">
+              Password:
+            </label>
             <input
+              id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
